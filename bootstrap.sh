@@ -3,12 +3,12 @@
 # Update hosts file
 echo "[TASK 1] Update /etc/hosts file"
 cat >>/etc/hosts<<EOF
-172.42.42.100 kmaster.example.com kmaster
-172.42.42.101 kworker1.example.com kworker1
-172.42.42.102 kworker2.example.com kworker2
+192.168.20.100 kodiksmaster.example.com kodiksmaster
+192.168.20.101 kodiksworker1.example.com kodiksworker1
+192.168.20.102 kodiksworker2.example.com kodiksworker2
 EOF
 
-echo 'Update Centos reis'
+echo 'Update Centos'
 yum check-update
 # Install docker from Docker-ce repository
 echo "[TASK 2] Install docker container engine"
